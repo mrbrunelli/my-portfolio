@@ -1,6 +1,6 @@
 .div-scroll {
     overflow-y: auto;
-    height: 500px;
+    height: 450px;
     width: 900px;
 }
 
@@ -8,14 +8,14 @@
     width: 0;
 }
 
-.text-dark {
-    color: #222;
+.text-light {
+    color: #fff;
 }
 
 @media only screen and (min-width: 1400px) {
     .div-scroll {
         overflow-y: auto;
-        height: 700px;
+        height: 600px;
         width: 900px;
     }
 }

@@ -14,7 +14,7 @@ const Home = () => {
                         contentStyle={{ background: '#8844ee', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #8844ee' }}
                         date="2019 - present"
-                        dateClassName="text-dark"
+                        dateClassName="text-light"
                         iconStyle={{ background: '#8844ee', color: '#fff' }}
                         icon={<FiCode />}
                     >
@@ -30,7 +30,7 @@ const Home = () => {
                         contentStyle={{ background: '#8844ee', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #8844ee' }}
                         date="2012 - 2015"
-                        dateClassName="text-dark"
+                        dateClassName="text-light"
                         iconStyle={{ background: '#8844ee', color: '#fff' }}
                         icon={<FiMonitor />}
                     >
