@@ -1,22 +1,60 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { FiUser, FiBriefcase, FiMapPin, FiLinkedin, FiTwitter, FiGithub, FiInstagram, FiChevronRight, FiMail } from 'react-icons/fi'
+import api from '../../services/api'
 import './styles.css'
 
-const Sidebar = () => {
+interface User {
+    id: number
+    name: string
+    avatar_url: string
+    bio: string
+    company: string
+    html_url: string
+    blog: string
+    twitter_username: string
+    location: string
+    email: string
+    public_repos: number
+    followers: number
+}
+
+const Sidebar: React.FC = (props) => {
+
+    const [user, setUser] = useState<User>()
+
+    useEffect(() => {
+        api.get('/users/mrbrunelli').then(response => {
+            setUser(response.data)
+        })
+    }, [])
+
     return (
         <div id="layout">
             <aside>
                 <div>
                     <picture>
-                        Minha Foto
+                        <img src={user?.avatar_url} alt="Foto de perfil" />
                     </picture>
-                    <h1>Meu Nome</h1>
-                    <p>Meu Cargo</p>
+                    <h3><FiUser /> {user?.name}</h3>
+                    <h4><FiMapPin /> {user?.location}</h4>
+                    <h4><FiBriefcase /> {user?.company}</h4>
+                    <br />
+                    <h3><FiChevronRight /> Minhas redes sociais</h3>
+                    <span>
+                        <a href={user?.html_url} target="_blank"><FiGithub /></a>
+                        <a href={user?.blog} target="_blank"><FiLinkedin /></a>
+                        <a href={"https://twitter.com/" + user?.twitter_username} target="_blank"><FiTwitter /></a>
+                        <a href={"https://www.instagram.com/mrbrunelli/"} target="_blank"><FiInstagram /></a>
+                    </span>
+                    <br />
+                    <h3><FiChevronRight /> Contato</h3>
+                    <h4><FiMail /> matheus.brunelli@gmail.com</h4>
                 </div>
             </aside>
 
             <div id="background-content">
                 <div id="content">
-                    <h1>Content</h1>
+                    {props.children}
                 </div>
             </div>
         </div>

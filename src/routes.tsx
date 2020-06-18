@@ -2,11 +2,14 @@ import React from 'react'
 import { Route, BrowserRouter } from 'react-router-dom'
 
 import Sidebar from './components/Sidebar'
+import Home from './pages/Home'
 
 const Routes = () => {
     return (
         <BrowserRouter>
-            <Route component={Sidebar} path="/" exact />
+            <Sidebar>
+                <Route component={Home} path="/" exact />
+            </Sidebar>
         </BrowserRouter>
     )
 }
