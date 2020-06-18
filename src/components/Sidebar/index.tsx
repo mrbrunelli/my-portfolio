@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { FiUser, FiBriefcase, FiMapPin, FiLinkedin, FiTwitter, FiGithub, FiInstagram, FiChevronRight, FiMail } from 'react-icons/fi'
 import api from '../../services/api'
 import './styles.css'

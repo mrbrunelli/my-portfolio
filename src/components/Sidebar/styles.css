@@ -20,7 +20,7 @@ aside>div {
 
 aside>div>picture>img {
     width: 200px;
-    border: 1px solid #fafafa;
+    border: 2px solid #fafafa;
     border-radius: 20px;
 }
 
@@ -29,19 +29,20 @@ aside>div>picture>img {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
 }
 
 #content {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #fff;
-    margin: 60px 40px 0px 40px;
+    margin: 40px 30px 0px 30px;
     width: 95%;
     height: 95%;
     border-radius: 20px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 a {
