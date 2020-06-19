@@ -49,7 +49,7 @@ const Sidebar: React.FC = (props) => {
                     </span>
                     <br />
                     <h3 style={{ color: '#C4E538' }}><FiChevronRight /> Contato</h3>
-                    <h4><FiMail /> matheus.brunelli@gmail.com</h4>
+                    <a href="mailto:matheus.brunelli@gmail.com"><h4><FiMail /> matheus.brunelli@gmail.com</h4></a>
                 </div>
             </aside>
 
