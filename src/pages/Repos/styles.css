@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 20px 0 20px;
+}
+
+.card-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100px;
+    max-width: 400px;
+    background-color: #8844ee;
+    color: #fff;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.card-item:hover {
+    transform: scale(0.98);
+}
+
+.card-item-content {
+    margin-left: 20px;
+}
+
+.card-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    margin: 3px 0 3px 0;
+}
