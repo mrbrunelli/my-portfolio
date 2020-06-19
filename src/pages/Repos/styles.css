@@ -18,6 +18,7 @@
     padding: 20px;
     border-radius: 20px;
     transition: 300ms;
+    border-bottom: 2px solid #fff;
 }
 
 .card-item:hover {
