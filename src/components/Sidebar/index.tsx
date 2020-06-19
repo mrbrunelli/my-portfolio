@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { FiUser, FiBriefcase, FiMapPin, FiLinkedin, FiTwitter, FiGithub, FiInstagram, FiChevronRight, FiMail, FiArrowRight, FiArrowLeft } from 'react-icons/fi'
+import { FiUser, FiBriefcase, FiMapPin, FiLinkedin, FiTwitter, FiGithub, FiInstagram, FiChevronRight, FiMail } from 'react-icons/fi'
 import api from '../../services/api'
 import './styles.css'
 
@@ -22,7 +22,6 @@ interface User {
 const Sidebar: React.FC = (props) => {
 
     const [user, setUser] = useState<User>()
-    const [page, setPage] = useState<number>()
 
     useEffect(() => {
         api.get('/users/mrbrunelli').then(response => {
@@ -57,11 +56,6 @@ const Sidebar: React.FC = (props) => {
             <div id="background-content">
                 <div id="content">
                     {props.children}
-                    <div id="content-links">
-                        <Link to="/"><FiArrowLeft style={{ color: '#fff' }} /></Link>
-                        <Link to="/repos"><FiBriefcase style={{ color: '#fff' }} /></Link>
-                        <Link to="/education"><FiArrowRight style={{ color: '#fff' }} /></Link>
-                    </div>
                 </div>
             </div>
         </div>

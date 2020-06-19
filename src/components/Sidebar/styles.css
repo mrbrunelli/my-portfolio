@@ -45,15 +45,6 @@ aside>div>picture>img {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-#content-links {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px 0 20px;
-    font-size: 32px;
-}
-
 a {
     text-decoration: none;
 }

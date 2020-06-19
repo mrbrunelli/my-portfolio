@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import { FiCode, FiMonitor, FiMapPin } from 'react-icons/fi'
+import { FiCode, FiMonitor, FiMapPin, FiArrowLeft, FiArrowRight, FiHome } from 'react-icons/fi'
 import './styles.css'
 
 const Home = () => {
     return (
-        <div>
+        <>
             <div className="div-scroll">
                 <VerticalTimeline>
                     <VerticalTimelineElement
@@ -43,7 +44,12 @@ const Home = () => {
                     </VerticalTimelineElement>
                 </VerticalTimeline>
             </div>
-        </div>
+            <div className="pagination">
+                <Link to="/"><FiArrowLeft style={{ color: '#fff' }} /></Link>
+                <Link to="/"><FiHome style={{ color: '#fff' }} /></Link>
+                <Link to="/education"><FiArrowRight style={{ color: '#fff' }} /></Link>
+            </div>
+        </>
     )
 }
 
