@@ -1,9 +1,17 @@
+.loading {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 20px 0 20px;
+    transition: ease-in 400ms;
 }
 
 .card-item {

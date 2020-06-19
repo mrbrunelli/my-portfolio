@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Loader from 'react-loader-spinner'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import { FiArrowLeft, FiArrowRight, FiDownload, FiGithub, FiCode } from 'react-icons/fi'
 import { FaJs, FaDatabase, FaPhp, FaHtml5, FaCss3 } from 'react-icons/fa'
 import api from '../../services/api'
@@ -19,11 +21,16 @@ interface Repo {
 const Repos = () => {
 
     const [repos, setRepos] = useState<Repo[]>([])
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        api.get('/users/mrbrunelli/repos').then(response => {
-            setRepos(response.data)
-        })
+        setLoading(true)
+        setTimeout(() => {
+            api.get('/users/mrbrunelli/repos').then(response => {
+                setRepos(response.data)
+                setLoading(false)
+            })
+        }, 1500);
     }, [])
 
     function formatDate(date: string) {
@@ -52,28 +59,43 @@ const Repos = () => {
     return (
         <>
             <div className="div-scroll">
-                <div className="card">
-                    {repos.map((repo, index) => (
-                        <div
-                            key={index.valueOf()}
-                            className="card-item"
-                        >
-                            <div className="card-item-logo">
-                                <span style={{ fontSize: '36px' }}>{verifyLanguage(repo.language)}</span>
-                            </div>
-                            <div className="card-item-content">
-                                <span className="card-item-header">
-                                    <h3>{index.valueOf()} {repo.name}</h3>
-                                    <a style={{ color: '#fff', fontSize: '20px' }} href={repo.html_url + '/archive/master.zip'}><FiDownload /></a>
-                                </span>
-                                <small>Atualizado em: {formatDate(repo.updated_at)}</small>
-                                <hr />
-                                <p>{repo.description}</p>
-                                <a style={{ color: '#C4E538' }} href={repo.html_url}><small>{repo.html_url}</small></a>
-                            </div>
+                {loading
+                    ? (
+                        <div className="loading">
+                            <Loader
+                                type="Puff"
+                                color="#8844ee"
+                                height={100}
+                                width={100}
+                                timeout={3000}
+                            />
                         </div>
-                    ))}
-                </div>
+                    )
+                    : (
+                        <div className="card">
+                            {repos.map((repo, index) => (
+                                <div
+                                    key={index.valueOf()}
+                                    className="card-item"
+                                >
+                                    <div className="card-item-logo">
+                                        <span style={{ fontSize: '36px' }}>{verifyLanguage(repo.language)}</span>
+                                    </div>
+                                    <div className="card-item-content">
+                                        <span className="card-item-header">
+                                            <h3>{index.valueOf()} {repo.name}</h3>
+                                            <a style={{ color: '#fff', fontSize: '20px' }} href={repo.html_url + '/archive/master.zip'}><FiDownload /></a>
+                                        </span>
+                                        <small>Atualizado em: {formatDate(repo.updated_at)}</small>
+                                        <hr />
+                                        <p>{repo.description}</p>
+                                        <a style={{ color: '#C4E538' }} href={repo.html_url}><small>{repo.html_url}</small></a>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )
+                }
             </div>
             <div className="pagination">
                 <Link to="/education"><FiArrowLeft style={{ color: '#fff' }} /></Link>
