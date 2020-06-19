@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mrbrunelli/my-portfolio/static/css/main.065906df.chunk.css",
+    "main.js": "/mrbrunelli/my-portfolio/static/js/main.ba6f6b72.chunk.js",
+    "main.js.map": "/mrbrunelli/my-portfolio/static/js/main.ba6f6b72.chunk.js.map",
+    "runtime-main.js": "/mrbrunelli/my-portfolio/static/js/runtime-main.6211a5f6.js",
+    "runtime-main.js.map": "/mrbrunelli/my-portfolio/static/js/runtime-main.6211a5f6.js.map",
+    "static/css/2.54fec870.chunk.css": "/mrbrunelli/my-portfolio/static/css/2.54fec870.chunk.css",
+    "static/js/2.d31196b3.chunk.js": "/mrbrunelli/my-portfolio/static/js/2.d31196b3.chunk.js",
+    "static/js/2.d31196b3.chunk.js.map": "/mrbrunelli/my-portfolio/static/js/2.d31196b3.chunk.js.map",
+    "index.html": "/mrbrunelli/my-portfolio/index.html",
+    "precache-manifest.f1d0c875108c761ba31c2cdd7b5bde08.js": "/mrbrunelli/my-portfolio/precache-manifest.f1d0c875108c761ba31c2cdd7b5bde08.js",
+    "service-worker.js": "/mrbrunelli/my-portfolio/service-worker.js",
+    "static/css/2.54fec870.chunk.css.map": "/mrbrunelli/my-portfolio/static/css/2.54fec870.chunk.css.map",
+    "static/css/main.065906df.chunk.css.map": "/mrbrunelli/my-portfolio/static/css/main.065906df.chunk.css.map",
+    "static/js/2.d31196b3.chunk.js.LICENSE.txt": "/mrbrunelli/my-portfolio/static/js/2.d31196b3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6211a5f6.js",
+    "static/css/2.54fec870.chunk.css",
+    "static/js/2.d31196b3.chunk.js",
+    "static/css/main.065906df.chunk.css",
+    "static/js/main.ba6f6b72.chunk.js"
+  ]
+}
