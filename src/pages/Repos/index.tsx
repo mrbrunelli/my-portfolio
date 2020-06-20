@@ -25,12 +25,12 @@ const Repos = () => {
 
     useEffect(() => {
         setLoading(true)
+        api.get('/users/mrbrunelli/repos?sort=interactions&per_page=100').then(response => {
+            setRepos(response.data)
+        })
         setTimeout(() => {
-            api.get('/users/mrbrunelli/repos').then(response => {
-                setRepos(response.data)
-                setLoading(false)
-            })
-        }, 1500);
+            setLoading(false)
+        }, 1000);
     }, [])
 
     function formatDate(date: string) {
