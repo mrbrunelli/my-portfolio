@@ -8,6 +8,28 @@ import courses from '../../data/Education/courses'
 import './styles.css'
 
 const Education = () => {
+
+    function verifyIcon(icon: string) {
+        switch (icon) {
+            case 'FaJs':
+                return <FaJs />
+            case 'FaDatabase':
+                return <FaDatabase />
+            case 'FaDocker':
+                return <FaDocker />
+            case 'FaAsterisk':
+                return <FaAsterisk />
+            case 'FaAdobe':
+                return <FaAdobe />
+            case 'FaUniversity':
+                return <FaUniversity />
+            case 'FaChartLine':
+                return <FaChartLine />
+            default:
+                return ''
+        }
+    }
+
     return (
         <>
             <div className="div-scroll">
@@ -17,10 +39,10 @@ const Education = () => {
                             className="vertical-timeline-element--education"
                             contentStyle={{ background: '#8844ee', color: '#fff' }}
                             contentArrowStyle={{ borderRight: '7px solid  #8844ee' }}
-                            date="2019 - present"
+                            date={course.date}
                             dateClassName="text-light"
                             iconStyle={{ background: '#8844ee', color: '#fff' }}
-                            icon={<FaUniversity />}
+                            icon={verifyIcon(course.icon)}
                         >
                             <h3 className="vertical-timeline-element-title">{course.title}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{course.institution}</h4>

@@ -4,6 +4,8 @@ const courses = [
         institution: 'Faculdade Alfa',
         location: 'Umuarama, PR',
         description: 'Webdesign e Dispositivos Móveis',
+        icon: 'FaUniversity',
+        date: '2019 - present',
         technologies: [
             'PHP',
             'Java',
@@ -17,6 +19,8 @@ const courses = [
         institution: 'Rocketseat',
         location: '',
         description: 'Desenvolvimento do Ecoleta, aplicação para ajudar pessoas a encontrarem pontos de coleta para reciclagem',
+        icon: 'FaJs',
+        date: '06/2020',
         technologies: [
             'Node.js',
             'ReactJS',
@@ -30,6 +34,8 @@ const courses = [
         institution: 'Glider Cursos',
         location: '',
         description: 'Desenvolvimento de Expressões Regulares para manipular padrões de texto',
+        icon: 'FaAsterisk',
+        date: '04/2020',
         technologies: [
             'RegExp'
         ]
@@ -39,6 +45,8 @@ const courses = [
         institution: 'Cod3r Cursos',
         location: '',
         description: 'Criar aplicações conteinerizadas, imagens personalizadas e soluções que rodem da mesma forma em qualquer ambiente',
+        icon: 'FaDocker',
+        date: '03/2020',
         technologies: [
             'Docker',
             'Docker Hub',
@@ -50,6 +58,8 @@ const courses = [
         institution: 'Rocketseat',
         location: '',
         description: 'Desenvolvimento do Be The Hero, aplicação para ajudar ONGs a cadastrar demandas e receber contribuições',
+        icon: 'FaJs',
+        date: '03/2020',
         technologies: [
             'Node.js',
             'ReactJS',
@@ -62,6 +72,8 @@ const courses = [
         institution: 'Origamid',
         location: '',
         description: 'Desenvolvimento de interfaces de usuário',
+        icon: 'FaAdobe',
+        date: '02/2020',
         technologies: [
             'Adobe XD',
         ]
@@ -71,6 +83,8 @@ const courses = [
         institution: 'Skylab, Rocketseat',
         location: '',
         description: 'Curso de JavaScript ES6',
+        icon: 'FaJs',
+        date: '01/2020',
         technologies: [
             'Arrow Functions',
             'Class ',
@@ -83,6 +97,8 @@ const courses = [
         institution: 'André Prado, Udemy',
         location: '',
         description: 'Levantamento de projetos de Business Intelligence, Extração de dados, Aplicações visuais',
+        icon: 'FaChartLine',
+        date: '12/2019',
         technologies: [
             'KPIs',
             'Gráficos',
@@ -94,6 +110,8 @@ const courses = [
         institution: 'Curso em Vídeo',
         location: '',
         description: 'Conhecendo mais sobre a linguagem SQL',
+        icon: 'FaDatabase',
+        date: '07/2019',
         technologies: [
             'Instruções',
             'Cláusulas',
