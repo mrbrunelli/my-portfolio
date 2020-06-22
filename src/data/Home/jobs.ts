@@ -10,7 +10,7 @@ interface Jobs {
     icon: IconType
 }
 
-const jobs = [
+const jobs: Jobs[] = [
     {
         title: 'Analista de Sistemas',
         company: 'Grupo Gazin',

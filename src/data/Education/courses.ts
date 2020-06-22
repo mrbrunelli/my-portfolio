@@ -11,7 +11,7 @@ interface Courses {
     technologies: string[]
 }
 
-const courses = [
+const courses: Courses[] = [
     {
         title: 'Sistemas Para Internet',
         institution: 'Faculdade Alfa',
