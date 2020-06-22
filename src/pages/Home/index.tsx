@@ -23,8 +23,9 @@ const Home = () => {
         <>
             <div className="div-scroll">
                 <VerticalTimeline>
-                    {jobs.map(job => (
+                    {jobs.map((job, index) => (
                         <VerticalTimelineElement
+                            key={String(index)}
                             className="vertical-timeline-element--work"
                             contentStyle={{ background: '#8844ee', color: '#fff' }}
                             contentArrowStyle={{ borderRight: '7px solid  #8844ee' }}

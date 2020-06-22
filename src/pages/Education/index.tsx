@@ -34,8 +34,9 @@ const Education = () => {
         <>
             <div className="div-scroll">
                 <VerticalTimeline>
-                    {courses.map(course => (
+                    {courses.map((course, index) => (
                         <VerticalTimelineElement
+                            key={String(index)}
                             className="vertical-timeline-element--education"
                             contentStyle={{ background: '#8844ee', color: '#fff' }}
                             contentArrowStyle={{ borderRight: '7px solid  #8844ee' }}
