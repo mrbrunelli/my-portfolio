@@ -2,23 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import { FiCode, FiMonitor, FiMapPin, FiArrowLeft, FiArrowRight, FiBriefcase } from 'react-icons/fi'
+import { FiMapPin, FiArrowLeft, FiArrowRight, FiBriefcase } from 'react-icons/fi'
 import jobs from '../../data/Home/jobs'
 import './styles.css'
 
 const Home = () => {
-
-    function verifyIcon(icon: string) {
-        switch (icon) {
-            case 'FiCode':
-                return <FiCode />
-            case 'FiMonitor':
-                return <FiMonitor />
-            default:
-                return ''
-        }
-    }
-
     return (
         <>
             <div className="div-scroll">
@@ -32,7 +20,7 @@ const Home = () => {
                             date={job.date}
                             dateClassName="text-light"
                             iconStyle={{ background: '#8844ee', color: '#fff' }}
-                            icon={verifyIcon(job.icon)}
+                            icon={<job.icon />}
                         >
                             <h3 className="vertical-timeline-element-title">{job.title}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{job.company}</h4>
