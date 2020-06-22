@@ -21,7 +21,7 @@ interface Repo {
 const Repos = () => {
 
     const [repos, setRepos] = useState<Repo[]>([])
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState<boolean>(true)
 
     useEffect(() => {
         setLoading(true)
