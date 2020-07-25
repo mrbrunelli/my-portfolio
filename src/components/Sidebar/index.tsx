@@ -32,13 +32,13 @@ const Sidebar: React.FC = (props) => {
         })
         setTimeout(() => {
             setLoading(false)
-        }, 1000);
+        }, 1000)
     }, [])
 
     return (
-        <div id="layout">
-            <aside>
-                <div>
+        <div className="container">
+            <aside className="sidebar">
+                <div className="user-profile">
                     {loading
                         ? (
                             <Loader
@@ -51,34 +51,38 @@ const Sidebar: React.FC = (props) => {
                         )
                         : (
                             <>
-                                <picture>
+                                <picture className="user-photo">
                                     <img src={user?.avatar_url} alt="Foto de perfil" />
                                 </picture>
-                                <h3 style={{ color: '#C4E538' }}><FiUser /> {user?.name}</h3>
-                                <h4><FiMapPin /> {user?.location}</h4>
-                                <h4><FiBriefcase /> {user?.company}</h4>
-                                <br />
-                                <h3 style={{ color: '#C4E538' }}><FiChevronRight /> Minhas redes sociais</h3>
-                                <span>
-                                    <a href={user?.html_url} target="_blank"><FiGithub /></a>
-                                    <a href={user?.blog} target="_blank"><FiLinkedin /></a>
-                                    <a href={"https://twitter.com/" + user?.twitter_username} target="_blank"><FiTwitter /></a>
-                                    <a href={"https://www.instagram.com/mrbrunelli/"} target="_blank"><FiInstagram /></a>
-                                </span>
-                                <br />
-                                <h3 style={{ color: '#C4E538' }}><FiChevronRight /> Contato</h3>
-                                <a href="mailto:matheus.brunelli@gmail.com"><h4><FiMail /> matheus.brunelli@gmail.com</h4></a>
+                                <div className="user-info">
+                                    <h3 style={{ color: '#C4E538' }}><FiUser /> {user?.name}</h3>
+                                    <h4><FiMapPin /> {user?.location}</h4>
+                                    <h4><FiBriefcase /> {user?.company}</h4>
+                                </div>
+                                <div className="user-social">
+                                    <h3 style={{ color: '#C4E538' }}><FiChevronRight /> Minhas redes sociais</h3>
+                                    <div className="user-social-icons">
+                                        <a href={user?.html_url} target="_blank"><FiGithub /></a>
+                                        <a href={user?.blog} target="_blank"><FiLinkedin /></a>
+                                        <a href={"https://twitter.com/" + user?.twitter_username} target="_blank"><FiTwitter /></a>
+                                        <a href={"https://www.instagram.com/mrbrunelli/"} target="_blank"><FiInstagram /></a>
+                                    </div>
+                                </div>
+                                <div className="user-contact">
+                                    <h3 style={{ color: '#C4E538' }}><FiChevronRight /> Contato</h3>
+                                    <a href="mailto:matheus.brunelli@gmail.com"><h4><FiMail /> matheus.brunelli@gmail.com</h4></a>
+                                </div>
                             </>
                         )
                     }
                 </div>
             </aside>
 
-            <div id="background-content">
-                <div id="content">
+            <main className="main">
+                <div className="content">
                     {props.children}
                 </div>
-            </div>
+            </main>
         </div>
     )
 }

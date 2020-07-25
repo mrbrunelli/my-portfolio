@@ -10,21 +10,20 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 20px 0 20px;
-    transition: ease-in 400ms;
+    margin: 0 10px 0 10px;
+    transition: all ease-in 300ms;
 }
 
 .card-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 100px;
     max-width: 400px;
     background-color: #8844ee;
     color: #fff;
-    margin: 20px 0 20px 0;
+    margin: 20px 5px 20px 5px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     transition: 300ms;
     border-bottom: 2px solid #fff;
 }
