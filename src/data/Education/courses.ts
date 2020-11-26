@@ -22,7 +22,7 @@ const courses: Courses[] = [
         technologies: [
             'PHP',
             'Java',
-            'JavaScrip',
+            'JavaScript',
             'Banco de Dados',
             'Engenharia de Software',
         ]
