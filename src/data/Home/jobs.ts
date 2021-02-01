@@ -12,11 +12,18 @@ interface Jobs {
 
 const jobs: Jobs[] = [
     {
-        title: 'Desenvolvedor Web Full-Stack',
+        title: 'Desenvolvedor de Software',
         company: 'Grupo Gazin',
         location: 'Douradina, PR',
-        description: 'Desenvolvimento de APIs com Node.js e Go, microsserviços e rotinas, aplicações com ReactJS e React Native, UI/UX Design Adobe XD, PostgreSQL e B.I com Qlik Sense.',
-        date: '2019 - present',
+        description: 'Desenvolvimento de APIs, integrações, rotinas, microsserviços, sistemas web e desktop.',
+        date: '2021 - present',
+        icon: FiCode,
+    },{
+        title: 'Analista de Sistemas',
+        company: 'Grupo Gazin',
+        location: 'Douradina, PR',
+        description: 'Análises, extrações de dados PostgreSQL, desenvolvimento de B.I com Qlik Sense, rotinas e cron jobs.',
+        date: '2019 - 2021',
         icon: FiCode,
     },
     {
