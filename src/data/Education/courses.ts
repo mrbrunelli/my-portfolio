@@ -29,6 +29,19 @@ const courses: Courses[] = [
     ]
   },
   {
+    title: 'Next Level Week #4',
+    institution: 'Rocketseat',
+    location: '',
+    description: 'Desenvolvimento do Move.it, aplicação pomodoro, utilizando Next e Context API.',
+    icon: FaJs,
+    date: '03/2021',
+    technologies: [
+      'React',
+      'Next.js',
+      'Context API'
+    ]
+  },
+  {
     title: 'Go (Golang): Explorando a Linguagem do Google',
     institution: 'Cod3r Cursos',
     location: '',
