@@ -65,7 +65,6 @@ const Sidebar: React.FC = (props) => {
                                         <a href={user?.html_url} target="_blank"><FiGithub /></a>
                                         <a href={user?.blog} target="_blank"><FiLinkedin /></a>
                                         <a href={"https://twitter.com/" + user?.twitter_username} target="_blank"><FiTwitter /></a>
-                                        <a href={"https://www.instagram.com/mrbrunelli/"} target="_blank"><FiInstagram /></a>
                                     </div>
                                 </div>
                                 <div className="user-contact">
