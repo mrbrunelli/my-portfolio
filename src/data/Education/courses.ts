@@ -18,7 +18,7 @@ const courses: Courses[] = [
     location: 'Umuarama, PR',
     description: 'Desenvolvimento Web',
     icon: FaUniversity,
-    date: '2019 - present',
+    date: '2019 - 2021',
     technologies: [
       'JavaScript',
       'PHP',
@@ -26,6 +26,20 @@ const courses: Courses[] = [
       'Mobile',
       'Banco de Dados',
       'Engenharia de Software',
+    ]
+  },
+  {
+    title: 'Next Level Week #5',
+    institution: 'Rocketseat',
+    location: '',
+    description: 'Desenvolvimento do RocketChat, chat em tempo real, utilizando Node, TypeORM e Socket.IO',
+    icon: FaJs,
+    date: '05/2021',
+    technologies: [
+      'Node',
+      'Express',
+      'TypeORM',
+      'Socket.IO',
     ]
   },
   {

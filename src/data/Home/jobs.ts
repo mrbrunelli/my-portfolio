@@ -13,12 +13,21 @@ interface Jobs {
 const jobs: Jobs[] = [
     {
         title: 'Programador',
-        company: 'Grupo Gazin',
-        location: 'Douradina, PR',
-        description: 'Atendo demandas de incidentes e desenvolvo melhorias em sistemas internos utilizando várias tecnologias e linguagens de programação, focando principalmente em qualidade de software.',
+        company: 'DevApi Tecnologia By TIVIT',
+        location: 'Maringá, PR',
+        description: 'Desenvolvo a nova plataforma IPaaS, utilizando microfrontends React e microsserviços com NestJS, AWS SQS e MongoDB.',
         date: '2021 - present',
         icon: FiCode,
-    }, {
+    }, 
+    {
+        title: 'Programador',
+        company: 'Grupo Gazin',
+        location: 'Douradina, PR',
+        description: 'Desenvolvi integrações com NodeJS e Golang, e melhorias em sistemas legados, utilizando várias tecnologias e linguagens de programação, focando principalmente em qualidade de software.',
+        date: '2021 - 2021',
+        icon: FiCode,
+    }, 
+    {
         title: 'Analista de Sistemas',
         company: 'Grupo Gazin',
         location: 'Douradina, PR',
@@ -30,7 +39,7 @@ const jobs: Jobs[] = [
         title: 'Técnico em Informática',
         company: 'Inforleste Informática',
         location: 'São Paulo, SP',
-        description: 'Montagem e manutenção de computadores, Especialista em montagem de máquinas de alto desempenho.',
+        description: 'Montei máquinas de alto desempenho para gamers e arquitetos. Também montei máquinas enterprises para a CPTM (Companhia Paulista de Trens Metropolitanos) e para os Postos BR (PETROBRAS).',
         date: '2012 - 2015',
         icon: FiMonitor
     },
