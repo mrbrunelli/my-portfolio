@@ -1,5 +1,14 @@
-import {FaAdobe, FaAsterisk, FaChartLine, FaDatabase, FaDocker, FaJs, FaUniversity, FaGoogle} from 'react-icons/fa'
-import {IconType} from 'react-icons/lib'
+import {
+  FaAdobe,
+  FaAsterisk,
+  FaChartLine,
+  FaDatabase,
+  FaDocker,
+  FaJs,
+  FaUniversity,
+  FaGoogle,
+} from 'react-icons/fa'
+import { IconType } from 'react-icons/lib'
 
 interface Courses {
   title: string
@@ -26,101 +35,77 @@ const courses: Courses[] = [
       'Mobile',
       'Banco de Dados',
       'Engenharia de Software',
-    ]
+    ],
   },
   {
     title: 'Next Level Week #5',
     institution: 'Rocketseat',
     location: '',
-    description: 'Desenvolvimento do RocketChat, chat em tempo real, utilizando Node, TypeORM e Socket.IO',
+    description:
+      'Desenvolvimento do RocketChat, chat em tempo real, utilizando Node, TypeORM e Socket.IO',
     icon: FaJs,
     date: '05/2021',
-    technologies: [
-      'Node',
-      'Express',
-      'TypeORM',
-      'Socket.IO',
-    ]
+    technologies: ['Node', 'Express', 'TypeORM', 'Socket.IO'],
   },
   {
     title: 'Next Level Week #4',
     institution: 'Rocketseat',
     location: '',
-    description: 'Desenvolvimento do Move.it, aplicação pomodoro, utilizando Next e Context API.',
+    description:
+      'Desenvolvimento do Move.it, aplicação pomodoro, utilizando Next e Context API.',
     icon: FaJs,
     date: '03/2021',
-    technologies: [
-      'React',
-      'Next.js',
-      'Context API'
-    ]
+    technologies: ['React', 'Next.js', 'Context API'],
   },
   {
     title: 'Go (Golang): Explorando a Linguagem do Google',
     institution: 'Cod3r Cursos',
     location: '',
-    description: 'Desenvolvimento de aplicações Back-End, Automações, Webservices, Rotinas e Microsserviços',
+    description:
+      'Desenvolvimento de aplicações Back-End, Automações, Webservices, Rotinas e Microsserviços',
     icon: FaGoogle,
     date: '01/2021',
-    technologies: [
-      'Go',
-      'Go Modules',
-      'Http',
-      'MySQL',
-      'Microservices'
-    ]
+    technologies: ['Go', 'Go Modules', 'Http', 'MySQL', 'Microservices'],
   },
   {
     title: 'Next Level Week #1',
     institution: 'Rocketseat',
     location: '',
-    description: 'Desenvolvimento do Ecoleta, aplicação para ajudar pessoas a encontrarem pontos de coleta para reciclagem',
+    description:
+      'Desenvolvimento do Ecoleta, aplicação para ajudar pessoas a encontrarem pontos de coleta para reciclagem',
     icon: FaJs,
     date: '06/2020',
-    technologies: [
-      'Node.js',
-      'ReactJS',
-      'React Native',
-      'SQlite'
-    ]
+    technologies: ['Node.js', 'ReactJS', 'React Native', 'SQlite'],
   },
   {
     title: 'RegExp: Expressões Regulares',
     institution: 'Glider Cursos',
     location: '',
-    description: 'Desenvolvimento de Expressões Regulares para manipular padrões de texto',
+    description:
+      'Desenvolvimento de Expressões Regulares para manipular padrões de texto',
     icon: FaAsterisk,
     date: '04/2020',
-    technologies: [
-      'RegExp'
-    ]
+    technologies: ['RegExp'],
   },
   {
     title: 'Docker: Ferramenta essencial para Desenvolvedores',
     institution: 'Cod3r Cursos',
     location: '',
-    description: 'Criar aplicações conteinerizadas, imagens personalizadas e soluções que rodem da mesma forma em qualquer ambiente',
+    description:
+      'Criar aplicações conteinerizadas, imagens personalizadas e soluções que rodem da mesma forma em qualquer ambiente',
     icon: FaDocker,
     date: '03/2020',
-    technologies: [
-      'Docker',
-      'Docker Hub',
-      'Docker Compose',
-    ]
+    technologies: ['Docker', 'Docker Hub', 'Docker Compose'],
   },
   {
     title: 'Semana Omnistack 11.0',
     institution: 'Rocketseat',
     location: '',
-    description: 'Desenvolvimento do Be The Hero, aplicação para ajudar ONGs a cadastrar demandas e receber contribuições',
+    description:
+      'Desenvolvimento do Be The Hero, aplicação para ajudar ONGs a cadastrar demandas e receber contribuições',
     icon: FaJs,
     date: '03/2020',
-    technologies: [
-      'Node.js',
-      'ReactJS',
-      'React Native',
-      'SQlite',
-    ]
+    technologies: ['Node.js', 'ReactJS', 'React Native', 'SQlite'],
   },
   {
     title: 'UI/UX Adobe XD',
@@ -129,9 +114,7 @@ const courses: Courses[] = [
     description: 'Desenvolvimento de interfaces de usuário',
     icon: FaAdobe,
     date: '02/2020',
-    technologies: [
-      'Adobe XD',
-    ]
+    technologies: ['Adobe XD'],
   },
   {
     title: 'JavaScript ES6',
@@ -140,25 +123,17 @@ const courses: Courses[] = [
     description: 'Curso de JavaScript ES6',
     icon: FaJs,
     date: '01/2020',
-    technologies: [
-      'Arrow Functions',
-      'Class ',
-      'Arrays Methods',
-      'Promises',
-    ]
+    technologies: ['Arrow Functions', 'Class ', 'Arrays Methods', 'Promises'],
   },
   {
     title: 'Qlik Sense',
     institution: 'André Prado, Udemy',
     location: '',
-    description: 'Levantamento de projetos de Business Intelligence, Extração de dados, Aplicações visuais',
+    description:
+      'Levantamento de projetos de Business Intelligence, Extração de dados, Aplicações visuais',
     icon: FaChartLine,
     date: '12/2019',
-    technologies: [
-      'KPIs',
-      'Gráficos',
-      'Análise Histórica',
-    ]
+    technologies: ['KPIs', 'Gráficos', 'Análise Histórica'],
   },
   {
     title: 'Banco de Dados MySQL',
@@ -167,12 +142,7 @@ const courses: Courses[] = [
     description: 'Conhecendo mais sobre a linguagem SQL',
     icon: FaDatabase,
     date: '07/2019',
-    technologies: [
-      'Instruções',
-      'Cláusulas',
-      'Agrupadores',
-      'Subconsultas',
-    ]
+    technologies: ['Instruções', 'Cláusulas', 'Agrupadores', 'Subconsultas'],
   },
 ]
 
