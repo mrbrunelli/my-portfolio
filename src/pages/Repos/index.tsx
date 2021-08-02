@@ -27,10 +27,9 @@ const Repos = () => {
         setLoading(true)
         api.get('/users/mrbrunelli/repos?sort=interactions&per_page=100').then(response => {
             setRepos(response.data)
-        })
-        setTimeout(() => {
+        }).finally(() => {
             setLoading(false)
-        }, 1000);
+        })
     }, [])
 
     function formatDate(date: string) {
