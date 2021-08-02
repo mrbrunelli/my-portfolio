@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
-import { FiUser, FiBriefcase, FiMapPin, FiLinkedin, FiTwitter, FiGithub, FiInstagram, FiChevronRight, FiMail } from 'react-icons/fi'
+import { FiUser, FiBriefcase, FiMapPin, FiLinkedin, FiTwitter, FiGithub, FiChevronRight, FiMail } from 'react-icons/fi'
 import api from '../../services/api'
 import './styles.css'
 
