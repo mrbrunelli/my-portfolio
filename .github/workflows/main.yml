@@ -24,14 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Set git config
-        run: | 
-          git config --local user.email "matheus.brunelli@gmail.com"
-          git config --local user.name "mrbrunelli"
+        with:
+          ref: ${{ github.head_ref }}
       
       - name: Install dependencies
         run: yarn
@@ -39,4 +33,3 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run deploy gh-pages
         run: yarn deploy
-        
