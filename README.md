@@ -13,6 +13,7 @@
 
 <span align="center">
 
+[![Build and Deploy](https://github.com/mrbrunelli/my-portfolio/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/mrbrunelli/my-portfolio/actions/workflows/main.yml)
 ![](https://img.shields.io/github/last-commit/mrbrunelli/my-portfolio)
 ![](https://img.shields.io/github/commit-activity/m/mrbrunelli/my-portfolio)
 ![](https://img.shields.io/github/repo-size/mrbrunelli/my-portfolio)
