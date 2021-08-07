@@ -16,7 +16,7 @@ const jobs: Jobs[] = [
     company: 'DevApi Tecnologia By TIVIT',
     location: 'Maringá, PR',
     description:
-      'Desenvolvo a nova plataforma IPaaS, utilizando microfrontends React e microsserviços com NestJS, AWS SQS e MongoDB.',
+      'Desenvolvo a nova plataforma IPaaS, utilizando Serverless, microfrontends React e microsserviços com NestJS, AWS SQS e MongoDB.',
     date: '2021 - present',
     icon: FiCode,
   },
