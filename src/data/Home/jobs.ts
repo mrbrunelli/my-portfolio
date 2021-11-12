@@ -12,7 +12,7 @@ interface Jobs {
 
 const jobs: Jobs[] = [
   {
-    title: 'Programador',
+    title: 'Desenvolvedor de Software',
     company: 'DevApi Tecnologia By TIVIT',
     location: 'Maringá, PR',
     description:
@@ -21,7 +21,7 @@ const jobs: Jobs[] = [
     icon: FiCode,
   },
   {
-    title: 'Programador',
+    title: 'Desenvolvedor de Software',
     company: 'Grupo Gazin',
     location: 'Douradina, PR',
     description:
@@ -30,7 +30,7 @@ const jobs: Jobs[] = [
     icon: FiCode,
   },
   {
-    title: 'Analista de Sistemas',
+    title: 'Analista de Desenvolvimento',
     company: 'Grupo Gazin',
     location: 'Douradina, PR',
     description:
