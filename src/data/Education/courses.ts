@@ -7,6 +7,7 @@ import {
   FaJs,
   FaUniversity,
   FaGoogle,
+  FaAws,
 } from 'react-icons/fa'
 import { IconType } from 'react-icons/lib'
 
@@ -23,29 +24,59 @@ interface Courses {
 const courses: Courses[] = [
   {
     title: 'Sistemas Para Internet',
-    institution: 'Faculdade Alfa',
+    institution: 'UniAlfa',
     location: 'Umuarama, PR',
-    description: 'Desenvolvimento Web',
+    description: 'Tecnologia em Sistemas para Internet',
     icon: FaUniversity,
     date: '2019 - 2021',
     technologies: [
+      'HTML',
+      'CSS',
       'JavaScript',
-      'PHP',
       'Java',
-      'Mobile',
-      'Banco de Dados',
+      'PHP',
+      'Flutter',
+      'MySQL',
+      'Docker',
       'Engenharia de Software',
     ],
+  },
+  {
+    title: 'Clean Architecture & TDD with Node.js',
+    institution: 'Rodrigo Manguinho',
+    location: '',
+    description:
+      'Desenvolvimento de aplicações testáveis e desacopladas com Node.js + Typescript',
+    icon: FaJs,
+    date: '03/2022',
+    technologies: [
+      'Node.js',
+      'Typescript',
+      'Solid',
+      'Clean Architecture',
+      'TDD',
+      'Design Patterns',
+    ],
+  },
+  {
+    title: 'Aplicações Serverless',
+    institution: 'Erick Wendel',
+    location: '',
+    description:
+      'Desenvolvimento de aplicações escaláveis com AWS + Serverless Framework',
+    icon: FaAws,
+    date: '01/2022',
+    technologies: ['Node.js', 'Serverless Framework', 'AWS'],
   },
   {
     title: 'Next Level Week #5',
     institution: 'Rocketseat',
     location: '',
     description:
-      'Desenvolvimento do RocketChat, chat em tempo real, utilizando Node, TypeORM e Socket.IO',
+      'Desenvolvimento do RocketChat, chat em tempo real, utilizando Node.js, TypeORM e Socket.IO',
     icon: FaJs,
     date: '05/2021',
-    technologies: ['Node', 'Express', 'TypeORM', 'Socket.IO'],
+    technologies: ['Node.js', 'Express', 'TypeORM', 'Socket.IO'],
   },
   {
     title: 'Next Level Week #4',
