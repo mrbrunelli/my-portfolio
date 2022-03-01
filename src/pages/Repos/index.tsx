@@ -13,6 +13,8 @@ import { FaJs, FaDatabase, FaPhp, FaHtml5, FaCss3 } from 'react-icons/fa'
 import api from '../../services/api'
 import './styles.css'
 
+type Lang = 'JavaScript' | 'TypeScript' | 'PHP' | 'TSQL' | 'HTML' | 'CSS'
+
 interface Repo {
   name: string
   full_name: string
@@ -21,52 +23,53 @@ interface Repo {
   created_at: string
   updated_at: string
   clone_url: string
-  language: string
+  language: Lang
 }
 
 const Repos = () => {
   const [repos, setRepos] = useState<Repo[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
+  const [isLoading, setIsLoading] = useState<boolean>(true)
 
-  useEffect(() => {
-    setLoading(true)
-    api
-      .get('/users/mrbrunelli/repos?sort=interactions&per_page=100')
-      .then((response) => {
-        setRepos(response.data)
+  const getRepositoriesByUserName = async (name: string): Promise<void> => {
+    setIsLoading(true)
+    try {
+      const response = await api.get(`/users/${name}/repos`, {
+        params: {
+          sort: 'interaction',
+          per_page: 100,
+        },
       })
-      .finally(() => {
-        setLoading(false)
-      })
-  }, [])
-
-  function formatDate(date: string) {
-    return date.replace(/^(\d{4})[-](\d{2})[-](\d{2}).*/g, '$3/$2/$1')
+      setRepos(response.data)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
-  function verifyLanguage(lang: string) {
-    switch (lang) {
-      case 'JavaScript':
-        return <FaJs />
-      case 'TypeScript':
-        return <FaJs />
-      case 'PHP':
-        return <FaPhp />
-      case 'TSQL':
-        return <FaDatabase />
-      case 'HTML':
-        return <FaHtml5 />
-      case 'CSS':
-        return <FaCss3 />
-      default:
-        return <FiCode />
+  useEffect(() => {
+    getRepositoriesByUserName('mrbrunelli')
+  }, [])
+
+  const formatDate = (date: string) =>
+    new Date(date).toLocaleDateString('pt-BR')
+
+  const verifyLanguage = (lang: Lang) => {
+    const options = {
+      JavaScript: <FaJs />,
+      TypeScript: <FaJs />,
+      PHP: <FaPhp />,
+      TSQL: <FaDatabase />,
+      HTML: <FaHtml5 />,
+      CSS: <FaCss3 />,
+      default: <FiCode />,
     }
+
+    return options[lang] || options.default
   }
 
   return (
     <>
       <div className='div-scroll'>
-        {loading ? (
+        {isLoading ? (
           <div className='loading'>
             <Loader
               type='Puff'
