@@ -16,7 +16,7 @@ const jobs: Jobs[] = [
     company: 'DevApi Tecnologia By TIVIT',
     location: 'Maringá, PR',
     description:
-      'Desenvolvo a nova plataforma IPaaS, utilizando Serverless, microfrontends React e microsserviços com NestJS, AWS SQS e MongoDB.',
+      'Faço parte do time de engenharia, atuando no desenvolvimento da plataforma IPaaS e também atuando diretamente em integrações. Tenho em meu portfólio de integrações grandes empresas como Barba de Respeito, Refrigeração Mota, TBankS, Shopee, Mercos e Mercado Livre. Também estou sempre trazendo conhecimento técnico sobre testes, design patterns e arquitetura para o time.',
     date: '2021 - present',
     icon: FiCode,
   },
@@ -25,7 +25,7 @@ const jobs: Jobs[] = [
     company: 'Grupo Gazin',
     location: 'Douradina, PR',
     description:
-      'Desenvolvi integrações com NodeJS e Golang, e melhorias em sistemas legados, utilizando várias tecnologias e linguagens de programação, focando principalmente em qualidade de software.',
+      'Fiz parte do time de incidentes, desenvolvi melhorias em sistemas internos e criei indicadores e relatórios para os demais setores do grupo Gazin.',
     date: '2021 - 2021',
     icon: FiCode,
   },
@@ -34,7 +34,7 @@ const jobs: Jobs[] = [
     company: 'Grupo Gazin',
     location: 'Douradina, PR',
     description:
-      'Desenvolvi algoritmos que reduziram em 100% o lançamento manual de notas fiscais e ocorrências em plataformas de terceiros. Também fui responsável por fazer integrações REST com sistemas terceiros, criação de indicadores, extração de dados e desenvolvimento de soluções internas para o setor de Logística.',
+      'Fiz parte do time de logística e transporte. Desenvolvi integrações que reduziram em 100% o lançamento manual de notas fiscais e ocorrências em sistemas terceiros. Também realizei integrações com sistemas de frota e jornada, e desenvolvi indicadores no Qlik Sense para a gerência acompanhar o desempenho das entregas.',
     date: '2019 - 2021',
     icon: FiCode,
   },
@@ -43,8 +43,8 @@ const jobs: Jobs[] = [
     company: 'Inforleste Informática',
     location: 'São Paulo, SP',
     description:
-      'Montei máquinas de alto desempenho para gamers e arquitetos. Também montei máquinas enterprises para a CPTM (Companhia Paulista de Trens Metropolitanos) e para os Postos BR (PETROBRAS).',
-    date: '2012 - 2015',
+      'Meu segundo emprego, aprendi a montar máquinas desde configurações básicas para uso casual até configurações de alto desempenho para gamers e arquitetos. Ajudava meu primo a fazer pedidos, dar entrada em mercadorias e a vender. Essa experiência melhorou muito minha comunicação e articulação frente ao cliente.',
+    date: '2012 - 2014',
     icon: FiMonitor,
   },
 ]
