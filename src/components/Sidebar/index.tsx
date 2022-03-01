@@ -10,6 +10,7 @@ import {
   FiGithub,
   FiChevronRight,
   FiMail,
+  FiBold,
 } from 'react-icons/fi'
 import api from '../../services/api'
 import './styles.css'
@@ -31,25 +32,27 @@ interface User {
 
 const Sidebar: React.FC = (props) => {
   const [user, setUser] = useState<User>()
-  const [loading, setLoading] = useState<boolean>(true)
+  const [isLoading, setIsLoading] = useState<boolean>(true)
+
+  const getUserByName = async (name: string): Promise<void> => {
+    setIsLoading(true)
+    try {
+      const response = await api.get(`/users/${name}`)
+      setUser(response.data)
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   useEffect(() => {
-    setLoading(true)
-    api
-      .get('/users/mrbrunelli')
-      .then((response) => {
-        setUser(response.data)
-      })
-      .finally(() => {
-        setLoading(false)
-      })
+    getUserByName('mrbrunelli')
   }, [])
 
   return (
     <div className='container'>
       <aside className='sidebar'>
         <div className='user-profile'>
-          {loading ? (
+          {isLoading ? (
             <Loader
               type='Puff'
               color='#8844ee'
@@ -80,6 +83,13 @@ const Sidebar: React.FC = (props) => {
                 <div className='user-social-icons'>
                   <a href={user?.html_url} target='_blank' rel='noreferrer'>
                     <FiGithub />
+                  </a>
+                  <a
+                    href='https://mrbrunelli.github.io/blog/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <FiBold />
                   </a>
                   <a href={user?.blog} target='_blank' rel='noreferrer'>
                     <FiLinkedin />
