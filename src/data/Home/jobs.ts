@@ -1,4 +1,4 @@
-import { FiCode, FiMonitor } from 'react-icons/fi'
+import { FiCode } from 'react-icons/fi'
 import { IconType } from 'react-icons/lib'
 
 interface Jobs {
