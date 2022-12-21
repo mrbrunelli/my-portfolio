@@ -10,7 +10,7 @@ import {
   FiGithub,
   FiChevronRight,
   FiMail,
-  FiBold,
+  FiBold
 } from 'react-icons/fi'
 import api from '../../services/api'
 import './styles.css'

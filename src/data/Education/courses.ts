@@ -1,13 +1,13 @@
 import {
   FaAdobe,
   FaAsterisk,
+  FaAws,
   FaChartLine,
   FaDatabase,
   FaDocker,
-  FaJs,
-  FaUniversity,
   FaGoogle,
-  FaAws,
+  FaJs,
+  FaUniversity
 } from 'react-icons/fa'
 import { IconType } from 'react-icons/lib'
 
@@ -38,8 +38,8 @@ const courses: Courses[] = [
       'Flutter',
       'MySQL',
       'Docker',
-      'Engenharia de Software',
-    ],
+      'Engenharia de Software'
+    ]
   },
   {
     title: 'Clean Architecture & TDD with Node.js',
@@ -55,8 +55,8 @@ const courses: Courses[] = [
       'Solid',
       'Clean Architecture',
       'TDD',
-      'Design Patterns',
-    ],
+      'Design Patterns'
+    ]
   },
   {
     title: 'Aplicações Serverless',
@@ -66,7 +66,7 @@ const courses: Courses[] = [
       'Desenvolvimento de aplicações escaláveis com AWS + Serverless Framework',
     icon: FaAws,
     date: '01/2022',
-    technologies: ['Node.js', 'Serverless Framework', 'AWS'],
+    technologies: ['Node.js', 'Serverless Framework', 'AWS']
   },
   {
     title: 'Next Level Week #5',
@@ -76,7 +76,7 @@ const courses: Courses[] = [
       'Desenvolvimento do RocketChat, chat em tempo real, utilizando Node.js, TypeORM e Socket.IO',
     icon: FaJs,
     date: '05/2021',
-    technologies: ['Node.js', 'Express', 'TypeORM', 'Socket.IO'],
+    technologies: ['Node.js', 'Express', 'TypeORM', 'Socket.IO']
   },
   {
     title: 'Next Level Week #4',
@@ -86,7 +86,7 @@ const courses: Courses[] = [
       'Desenvolvimento do Move.it, aplicação pomodoro, utilizando Next e Context API.',
     icon: FaJs,
     date: '03/2021',
-    technologies: ['React', 'Next.js', 'Context API'],
+    technologies: ['React', 'Next.js', 'Context API']
   },
   {
     title: 'Go (Golang): Explorando a Linguagem do Google',
@@ -96,7 +96,7 @@ const courses: Courses[] = [
       'Desenvolvimento de aplicações Back-End, Automações, Webservices, Rotinas e Microsserviços',
     icon: FaGoogle,
     date: '01/2021',
-    technologies: ['Go', 'Go Modules', 'Http', 'MySQL', 'Microservices'],
+    technologies: ['Go', 'Go Modules', 'Http', 'MySQL', 'Microservices']
   },
   {
     title: 'Next Level Week #1',
@@ -106,7 +106,7 @@ const courses: Courses[] = [
       'Desenvolvimento do Ecoleta, aplicação para ajudar pessoas a encontrarem pontos de coleta para reciclagem',
     icon: FaJs,
     date: '06/2020',
-    technologies: ['Node.js', 'ReactJS', 'React Native', 'SQlite'],
+    technologies: ['Node.js', 'ReactJS', 'React Native', 'SQlite']
   },
   {
     title: 'RegExp: Expressões Regulares',
@@ -116,7 +116,7 @@ const courses: Courses[] = [
       'Desenvolvimento de Expressões Regulares para manipular padrões de texto',
     icon: FaAsterisk,
     date: '04/2020',
-    technologies: ['RegExp'],
+    technologies: ['RegExp']
   },
   {
     title: 'Docker: Ferramenta essencial para Desenvolvedores',
@@ -126,7 +126,7 @@ const courses: Courses[] = [
       'Criar aplicações conteinerizadas, imagens personalizadas e soluções que rodem da mesma forma em qualquer ambiente',
     icon: FaDocker,
     date: '03/2020',
-    technologies: ['Docker', 'Docker Hub', 'Docker Compose'],
+    technologies: ['Docker', 'Docker Hub', 'Docker Compose']
   },
   {
     title: 'Semana Omnistack 11.0',
@@ -136,7 +136,7 @@ const courses: Courses[] = [
       'Desenvolvimento do Be The Hero, aplicação para ajudar ONGs a cadastrar demandas e receber contribuições',
     icon: FaJs,
     date: '03/2020',
-    technologies: ['Node.js', 'ReactJS', 'React Native', 'SQlite'],
+    technologies: ['Node.js', 'ReactJS', 'React Native', 'SQlite']
   },
   {
     title: 'UI/UX Adobe XD',
@@ -145,7 +145,7 @@ const courses: Courses[] = [
     description: 'Desenvolvimento de interfaces de usuário',
     icon: FaAdobe,
     date: '02/2020',
-    technologies: ['Adobe XD'],
+    technologies: ['Adobe XD']
   },
   {
     title: 'JavaScript ES6',
@@ -154,7 +154,7 @@ const courses: Courses[] = [
     description: 'Curso de JavaScript ES6',
     icon: FaJs,
     date: '01/2020',
-    technologies: ['Arrow Functions', 'Class ', 'Arrays Methods', 'Promises'],
+    technologies: ['Arrow Functions', 'Class ', 'Arrays Methods', 'Promises']
   },
   {
     title: 'Qlik Sense',
@@ -164,7 +164,7 @@ const courses: Courses[] = [
       'Levantamento de projetos de Business Intelligence, Extração de dados, Aplicações visuais',
     icon: FaChartLine,
     date: '12/2019',
-    technologies: ['KPIs', 'Gráficos', 'Análise Histórica'],
+    technologies: ['KPIs', 'Gráficos', 'Análise Histórica']
   },
   {
     title: 'Banco de Dados MySQL',
@@ -173,8 +173,8 @@ const courses: Courses[] = [
     description: 'Conhecendo mais sobre a linguagem SQL',
     icon: FaDatabase,
     date: '07/2019',
-    technologies: ['Instruções', 'Cláusulas', 'Agrupadores', 'Subconsultas'],
-  },
+    technologies: ['Instruções', 'Cláusulas', 'Agrupadores', 'Subconsultas']
+  }
 ]
 
 export default courses

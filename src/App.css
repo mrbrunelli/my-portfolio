@@ -3,51 +3,52 @@
     Roboto Mono
 */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(51, 51, 51);
-    font-family: Roboto Mono, monospace;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(51, 51, 51);
+  font-family: Roboto Mono, monospace;
 }
 
 .pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px 0 20px;
-    padding: 20px;
-    font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 20px;
+  padding: 20px;
+  font-size: 32px;
 }
 
 .div-scroll {
-    overflow-y: auto;
-    height: 450px;
-    width: 100%;
+  overflow-y: auto;
+  height: 450px;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 .text-light {
-    color: #fff;
+  color: #fff;
 }
 
 @media only screen and (min-width: 1400px) {
-    .div-scroll {
-        overflow-y: auto;
-        height: 600px;
-        width: 100%;
-    }
+  .div-scroll {
+    overflow-y: auto;
+    height: 600px;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-height: 900px) {
-    .div-scroll {
-        overflow-y: auto;
-        height: 800px;
-        width: 100%;
-    }
+  .div-scroll {
+    overflow-y: auto;
+    height: 800px;
+    width: 100%;
+  }
 }

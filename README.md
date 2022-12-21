@@ -26,11 +26,13 @@
 <br>
 
 ## :bulb: Tecnologias Utilizadas
+
 - [x] **TypeScript**
 - [x] **ReactJS**
 - [x] **CSS GRID LAYOUT**
 
 ## :cool: Agora também em versão responsível
+
 > Print do meu Smartphone
 
 ![](./.github/smartphone.png)

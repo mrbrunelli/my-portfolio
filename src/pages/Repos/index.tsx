@@ -7,7 +7,7 @@ import {
   FiArrowRight,
   FiDownload,
   FiGithub,
-  FiCode,
+  FiCode
 } from 'react-icons/fi'
 import { FaJs, FaDatabase, FaPhp, FaHtml5, FaCss3 } from 'react-icons/fa'
 import api from '../../services/api'
@@ -36,8 +36,8 @@ const Repos = () => {
       const response = await api.get(`/users/${name}/repos`, {
         params: {
           sort: 'interaction',
-          per_page: 100,
-        },
+          per_page: 100
+        }
       })
       setRepos(response.data)
     } finally {
@@ -60,7 +60,7 @@ const Repos = () => {
       TSQL: <FaDatabase />,
       HTML: <FaHtml5 />,
       CSS: <FaCss3 />,
-      default: <FiCode />,
+      default: <FiCode />
     }
 
     return options[lang] || options.default

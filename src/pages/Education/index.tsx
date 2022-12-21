@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {
   VerticalTimeline,
-  VerticalTimelineElement,
+  VerticalTimelineElement
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import { FiArrowLeft, FiArrowRight, FiMapPin } from 'react-icons/fi'
