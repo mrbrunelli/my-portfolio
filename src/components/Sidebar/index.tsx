@@ -22,7 +22,7 @@ interface User {
   followers: number
 }
 
-const Sidebar: React.FC = (props) => {
+export const Sidebar: React.FC = (props) => {
   const getUserProfile = async (): Promise<User> => {
     const response = await api.get<User>('/users/mrbrunelli')
     return response.data
@@ -72,5 +72,3 @@ const Sidebar: React.FC = (props) => {
     </div>
   )
 }
-
-export default Sidebar

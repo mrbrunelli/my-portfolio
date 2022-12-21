@@ -27,7 +27,7 @@ interface Repo {
   language: Lang
 }
 
-const Repos = () => {
+export const Repos = () => {
   const getRepositories = async (): Promise<Repo[]> => {
     const response = await api.get<Repo[]>(`/users/mrbrunelli/repos`, {
       params: {
@@ -112,5 +112,3 @@ const Repos = () => {
     </>
   )
 }
-
-export default Repos
