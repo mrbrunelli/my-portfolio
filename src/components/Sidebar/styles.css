@@ -1,71 +1,73 @@
 .container {
-    display: grid;
-    grid-template-columns: 2fr 8fr;
-    grid-template-rows: 100vh;
-    grid-template-areas: 'sidebar main';
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 100vh;
+  grid-template-areas: 'sidebar main';
 }
 
 @media (max-width: 800px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 'sidebar' 'main';
-    }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'sidebar' 'main';
+  }
 }
 
 .sidebar {
-    grid-area: sidebar;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    background-color: #222;
-    box-shadow: 4px 6px 15px 0 rgba(0, 0, 0, 0.3);
+  grid-area: sidebar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background-color: #222;
+  box-shadow: 4px 6px 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
-    transition: 200ms;
+  color: #fff;
+  text-decoration: none;
+  transition: 200ms;
 }
 
 a:hover {
-    color: #8844ee;
+  color: #8844ee;
 }
 
-.user-info, .user-social, .user-contact {
-    color: #fff;
+.user-info,
+.user-social,
+.user-contact {
+  color: #fff;
 }
 
 .user-social-icons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .user-social-icons a {
-    font-size: 30px;
-    margin: 0 5px 0 5px;
+  font-size: 30px;
+  margin: 0 5px 0 5px;
 }
 
 .user-photo img {
-    width: 200px;
-    border: 2px solid #8844ee;
-    border-radius: 5px;
-    box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.3);
+  width: 200px;
+  border: 2px solid #8844ee;
+  border-radius: 50%;
+  box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .main {
-    grid-area: main;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
-    width: 90%;
-    background-color: #222;
-    border-radius: 5px;
-    box-shadow: 4px 6px 15px 0 rgba(0, 0, 0, 0.3);
+  width: 90%;
+  background-color: #222;
+  border-radius: 5px;
+  box-shadow: 4px 6px 15px 0 rgba(0, 0, 0, 0.3);
 }

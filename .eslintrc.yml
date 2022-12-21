@@ -26,4 +26,5 @@ rules:
     'jsx-quotes': ['error', 'prefer-single'],
     'camelcase': 'off',
     'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off'
   }

@@ -1,5 +1,5 @@
 name: Build and Deploy
-on: 
+on:
   push:
     branches:
       - master
@@ -20,4 +20,3 @@ jobs:
         with:
           branch: gh-pages
           folder: build
-
