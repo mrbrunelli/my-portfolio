@@ -13,7 +13,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import { jobs } from '../../data/jobs'
 import './styles.css'
 
-const Home = () => {
+export const Home = () => {
   return (
     <>
       <div className='div-scroll'>
@@ -53,5 +53,3 @@ const Home = () => {
     </>
   )
 }
-
-export default Home

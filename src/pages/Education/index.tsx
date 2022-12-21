@@ -9,7 +9,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import { courses } from '../../data/courses'
 import './styles.css'
 
-const Education = () => {
+export const Education = () => {
   return (
     <>
       <div className='div-scroll'>
@@ -52,5 +52,3 @@ const Education = () => {
     </>
   )
 }
-
-export default Education
