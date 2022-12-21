@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { FaCss3, FaDatabase, FaHtml5, FaJs, FaPhp } from 'react-icons/fa'
 import {
   FiArrowLeft,
@@ -9,6 +8,7 @@ import {
 } from 'react-icons/fi'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+import { useQuery } from 'react-query'
 import { Link } from 'react-router-dom'
 import api from '../../services/api'
 import './styles.css'
@@ -27,27 +27,17 @@ interface Repo {
 }
 
 const Repos = () => {
-  const [repos, setRepos] = useState<Repo[]>([])
-  const [isLoading, setIsLoading] = useState<boolean>(true)
-
-  const getRepositoriesByUserName = async (name: string): Promise<void> => {
-    setIsLoading(true)
-    try {
-      const response = await api.get(`/users/${name}/repos`, {
-        params: {
-          sort: 'interaction',
-          per_page: 100
-        }
-      })
-      setRepos(response.data)
-    } finally {
-      setIsLoading(false)
-    }
+  const getRepositories = async (): Promise<Repo[]> => {
+    const response = await api.get<Repo[]>(`/users/mrbrunelli/repos`, {
+      params: {
+        sort: 'interaction',
+        per_page: 100
+      }
+    })
+    return response.data
   }
 
-  useEffect(() => {
-    getRepositoriesByUserName('mrbrunelli')
-  }, [])
+  const { data, isLoading } = useQuery('repositories', getRepositories)
 
   const formatDate = (date: string) =>
     new Date(date).toLocaleDateString('pt-BR')
@@ -71,44 +61,39 @@ const Repos = () => {
       <div className='div-scroll'>
         {isLoading ? (
           <div className='loading'>
-            <Loader
-              type='Puff'
-              color='#8844ee'
-              height={100}
-              width={100}
-              timeout={3000}
-            />
+            <Loader type='Puff' color='#8844ee' height={100} width={100} />
           </div>
         ) : (
           <div className='card'>
-            {repos.map((repo, index) => (
-              <div key={index.valueOf()} className='card-item'>
-                <div className='card-item-logo'>
-                  <span style={{ fontSize: '36px' }}>
-                    {verifyLanguage(repo.language)}
-                  </span>
-                </div>
-                <div className='card-item-content'>
-                  <span className='card-item-header'>
-                    <h3>
-                      {index.valueOf()} {repo.name}
-                    </h3>
-                    <a
-                      style={{ color: '#fff', fontSize: '20px' }}
-                      href={repo.html_url + '/archive/master.zip'}
-                    >
-                      <FiDownload />
+            {data &&
+              data.map((repo, index) => (
+                <div key={index.valueOf()} className='card-item'>
+                  <div className='card-item-logo'>
+                    <span style={{ fontSize: '36px' }}>
+                      {verifyLanguage(repo.language)}
+                    </span>
+                  </div>
+                  <div className='card-item-content'>
+                    <span className='card-item-header'>
+                      <h3>
+                        {index.valueOf()} {repo.name}
+                      </h3>
+                      <a
+                        style={{ color: '#fff', fontSize: '20px' }}
+                        href={repo.html_url + '/archive/master.zip'}
+                      >
+                        <FiDownload />
+                      </a>
+                    </span>
+                    <small>Atualizado em: {formatDate(repo.updated_at)}</small>
+                    <hr />
+                    <p>{repo.description}</p>
+                    <a style={{ color: '#C4E538' }} href={repo.html_url}>
+                      <small>{repo.html_url}</small>
                     </a>
-                  </span>
-                  <small>Atualizado em: {formatDate(repo.updated_at)}</small>
-                  <hr />
-                  <p>{repo.description}</p>
-                  <a style={{ color: '#C4E538' }} href={repo.html_url}>
-                    <small>{repo.html_url}</small>
-                  </a>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         )}
       </div>
