@@ -10,7 +10,7 @@ interface Jobs {
   icon: IconType
 }
 
-const jobs: Jobs[] = [
+export const jobs: Jobs[] = [
   {
     title: 'Desenvolvedor de Software Sênior',
     company: 'Compass UOL',
@@ -48,5 +48,3 @@ const jobs: Jobs[] = [
     icon: FiCode
   }
 ]
-
-export default jobs

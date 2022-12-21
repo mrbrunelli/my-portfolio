@@ -1,17 +1,16 @@
-import React from 'react'
+import {
+  FiArrowLeft,
+  FiArrowRight,
+  FiBriefcase,
+  FiMapPin
+} from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import {
   VerticalTimeline,
   VerticalTimelineElement
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import {
-  FiMapPin,
-  FiArrowLeft,
-  FiArrowRight,
-  FiBriefcase
-} from 'react-icons/fi'
-import jobs from '../../data/Home/jobs'
+import { jobs } from '../../data/jobs'
 import './styles.css'
 
 const Home = () => {

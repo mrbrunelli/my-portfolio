@@ -1,13 +1,12 @@
-import React from 'react'
+import { FaGraduationCap } from 'react-icons/fa'
+import { FiArrowLeft, FiArrowRight, FiMapPin } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import {
   VerticalTimeline,
   VerticalTimelineElement
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import { FiArrowLeft, FiArrowRight, FiMapPin } from 'react-icons/fi'
-import { FaGraduationCap } from 'react-icons/fa'
-import courses from '../../data/Education/courses'
+import { courses } from '../../data/courses'
 import './styles.css'
 
 const Education = () => {

@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Loader from 'react-loader-spinner'
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+import { useEffect, useState } from 'react'
+import { FaCss3, FaDatabase, FaHtml5, FaJs, FaPhp } from 'react-icons/fa'
 import {
   FiArrowLeft,
   FiArrowRight,
+  FiCode,
   FiDownload,
-  FiGithub,
-  FiCode
+  FiGithub
 } from 'react-icons/fi'
-import { FaJs, FaDatabase, FaPhp, FaHtml5, FaCss3 } from 'react-icons/fa'
+import Loader from 'react-loader-spinner'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+import { Link } from 'react-router-dom'
 import api from '../../services/api'
 import './styles.css'
 

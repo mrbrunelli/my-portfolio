@@ -1,9 +1,8 @@
-import React from 'react'
-import { Route, HashRouter } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 
 import Sidebar from './components/Sidebar'
-import Home from './pages/Home'
 import Education from './pages/Education'
+import Home from './pages/Home'
 import Repos from './pages/Repos'
 
 const Routes = () => {

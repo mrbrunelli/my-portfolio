@@ -21,7 +21,7 @@ interface Courses {
   technologies: string[]
 }
 
-const courses: Courses[] = [
+export const courses: Courses[] = [
   {
     title: 'Sistemas Para Internet',
     institution: 'UniAlfa',
@@ -176,5 +176,3 @@ const courses: Courses[] = [
     technologies: ['Instruções', 'Cláusulas', 'Agrupadores', 'Subconsultas']
   }
 ]
-
-export default courses
