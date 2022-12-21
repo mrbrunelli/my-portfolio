@@ -54,7 +54,7 @@ a:hover {
 .user-photo img {
   width: 200px;
   border: 2px solid #8844ee;
-  border-radius: 5px;
+  border-radius: 50%;
   box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.3);
 }
 

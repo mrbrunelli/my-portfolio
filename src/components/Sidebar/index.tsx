@@ -1,17 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { FiBriefcase, FiLink, FiMapPin, FiUser } from 'react-icons/fi'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
-import {
-  FiUser,
-  FiBriefcase,
-  FiMapPin,
-  FiLinkedin,
-  FiTwitter,
-  FiGithub,
-  FiChevronRight,
-  FiMail,
-  FiBold
-} from 'react-icons/fi'
 import api from '../../services/api'
 import './styles.css'
 
@@ -76,41 +66,11 @@ const Sidebar: React.FC = (props) => {
                   <FiBriefcase /> {user?.company}
                 </h4>
               </div>
-              <div className='user-social'>
-                <h3 style={{ color: '#C4E538' }}>
-                  <FiChevronRight /> Minhas redes sociais
-                </h3>
-                <div className='user-social-icons'>
-                  <a href={user?.html_url} target='_blank' rel='noreferrer'>
-                    <FiGithub />
-                  </a>
-                  <a
-                    href='https://mrbrunelli.github.io/blog/'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <FiBold />
-                  </a>
-                  <a href={user?.blog} target='_blank' rel='noreferrer'>
-                    <FiLinkedin />
-                  </a>
-                  <a
-                    href={'https://twitter.com/' + user?.twitter_username}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <FiTwitter />
-                  </a>
-                </div>
-              </div>
               <div className='user-contact'>
-                <h3 style={{ color: '#C4E538' }}>
-                  <FiChevronRight /> Contato
-                </h3>
-                <a href='mailto:matheus.brunelli@gmail.com'>
-                  <h4>
-                    <FiMail /> matheus.brunelli@gmail.com
-                  </h4>
+                <a href={user?.blog} target='_blank' rel='noreferrer'>
+                  <h3 style={{ color: '#C4E538' }}>
+                    <FiLink /> Linktree
+                  </h3>
                 </a>
               </div>
             </>
