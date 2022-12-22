@@ -1,11 +1,11 @@
 import { FaCss3, FaDatabase, FaHtml5, FaJs, FaPhp } from 'react-icons/fa'
 import { FiCode, FiDownload, FiGithub } from 'react-icons/fi'
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import { useQuery } from 'react-query'
 import { Content } from '../../components/Content'
 import { Error } from '../../components/Error'
 import { Loading } from '../../components/Loading'
 import api from '../../services/api'
+import { Props } from '../../types/props'
 import './styles.css'
 
 type Lang = 'JavaScript' | 'TypeScript' | 'PHP' | 'TSQL' | 'HTML' | 'CSS'
@@ -21,7 +21,7 @@ interface Repo {
   language: Lang
 }
 
-const Container: React.FC = (props) => {
+const Container = (props: Props) => {
   return (
     <Content back='/education' to='repos' icon={FiGithub}>
       {props.children}

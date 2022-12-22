@@ -11,7 +11,7 @@ interface ContentProps {
   children: React.ReactNode
 }
 
-export const Content: React.FC<ContentProps> = (props) => {
+export const Content = (props: ContentProps) => {
   return (
     <>
       <div className='div-scroll'>{props.children}</div>

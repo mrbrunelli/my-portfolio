@@ -1,6 +1,10 @@
 import React from 'react'
 import './styles.css'
 
-export const Overlay: React.FC = (props) => {
+interface Props {
+  children: React.ReactNode
+}
+
+export const Overlay = (props: Props) => {
   return <div className='overlay'>{props.children}</div>
 }
