@@ -1,10 +1,9 @@
-import React from 'react'
 import { FiBriefcase, FiLink, FiMapPin, FiUser } from 'react-icons/fi'
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import { profile } from '../../data/profile'
+import { Props } from '../../types/props'
 import './styles.css'
 
-export const Sidebar: React.FC = (props) => {
+export const Sidebar = (props: Props) => {
   return (
     <div className='container'>
       <aside className='sidebar'>

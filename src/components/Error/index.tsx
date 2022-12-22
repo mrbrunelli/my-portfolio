@@ -1,6 +1,6 @@
 import './styles.css'
 
-export const Error: React.FC = (props) => {
+export const Error = () => {
   return (
     <div className='error'>
       <p>Content temporarily unavailable...</p>
