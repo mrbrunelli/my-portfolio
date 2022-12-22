@@ -16,7 +16,7 @@ export const jobs: Jobs[] = [
     company: 'Compass UOL',
     location: 'Douradina, PR - Home Office',
     description:
-      'Faço parte da squad de engenharia VLP (Visão Longitudinal do Paciente), onde integramos com nossos clientes todo o histórico de saúde do paciente, medicamentos receitados pelo médico e locais onde foi atendido.',
+      'Faço parte do time de VLP (Visão Longitudinal do Paciente) na Dasa, atuando em soluções de interoperabilidade, integração, performance e garantindo consistência na ingestão de dados hospitalares. Faço mentoria com meus colegas de trabalho, tanto em Hard Skills quanto em Soft Skills, para ajudá-los a alcançar amadurecimento, e consequentemente uma senioridade maior. Também realizo entrevistas técnicas com candidatos e indico para vagas no cliente.',
     date: '2022 - present',
     icon: FiCode
   },
