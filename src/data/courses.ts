@@ -1,5 +1,4 @@
 import {
-  FaAdobe,
   FaAsterisk,
   FaAws,
   FaChartLine,
@@ -10,6 +9,7 @@ import {
   FaUniversity
 } from 'react-icons/fa'
 import { IconType } from 'react-icons/lib'
+import { SiAdobexd, SiTypescript } from 'react-icons/si'
 
 interface Courses {
   title: string
@@ -47,7 +47,7 @@ export const courses: Courses[] = [
     location: '',
     description:
       'Desenvolvimento de aplicações testáveis e desacopladas com Node.js + Typescript',
-    icon: FaJs,
+    icon: SiTypescript,
     date: '03/2022',
     technologies: [
       'Node.js',
@@ -74,7 +74,7 @@ export const courses: Courses[] = [
     location: '',
     description:
       'Desenvolvimento do RocketChat, chat em tempo real, utilizando Node.js, TypeORM e Socket.IO',
-    icon: FaJs,
+    icon: SiTypescript,
     date: '05/2021',
     technologies: ['Node.js', 'Express', 'TypeORM', 'Socket.IO']
   },
@@ -84,7 +84,7 @@ export const courses: Courses[] = [
     location: '',
     description:
       'Desenvolvimento do Move.it, aplicação pomodoro, utilizando Next e Context API.',
-    icon: FaJs,
+    icon: SiTypescript,
     date: '03/2021',
     technologies: ['React', 'Next.js', 'Context API']
   },
@@ -143,7 +143,7 @@ export const courses: Courses[] = [
     institution: 'Origamid',
     location: '',
     description: 'Desenvolvimento de interfaces de usuário',
-    icon: FaAdobe,
+    icon: SiAdobexd,
     date: '02/2020',
     technologies: ['Adobe XD']
   },
