@@ -2,6 +2,7 @@ import React from 'react'
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi'
 import { IconType } from 'react-icons/lib'
 import { Link } from 'react-router-dom'
+import './styles.css'
 
 interface ContentProps {
   back: string
